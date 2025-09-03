@@ -6,7 +6,7 @@ This project demonstrates a **Next Word Prediction** model using an **LSTM (Long
 
 ---
 
-## 🚀 Features  
+## Features  
 
 - **Deep Learning Model**: Built with TensorFlow/Keras LSTM.  
 - **Dataset**: Text corpus from *Hamlet* (`hamlet.txt`).  
@@ -16,7 +16,7 @@ This project demonstrates a **Next Word Prediction** model using an **LSTM (Long
 - **Notebook Experiments**: Exploratory training and evaluation are in `experiments.ipynb`.  
 
 ---
-## 📂 Project Structure  
+## Project Structure  
 
 ├── app.py # Streamlit app for next word prediction
 ├── experiments.ipynb # Jupyter Notebook for training & analysis
