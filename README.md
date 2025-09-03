@@ -16,8 +16,8 @@ This project demonstrates a **Next Word Prediction** model using an **LSTM (Long
 - **Notebook Experiments**: Exploratory training and evaluation are in `experiments.ipynb`.  
 
 ---
-
 ## 📂 Project Structure  
+
 ├── app.py # Streamlit app for next word prediction
 ├── experiments.ipynb # Jupyter Notebook for training & analysis
 ├── hamlet.txt # Training corpus (Hamlet by Shakespeare)
@@ -26,43 +26,38 @@ This project demonstrates a **Next Word Prediction** model using an **LSTM (Long
 ├── requirements.txt # List of dependencies
 └── README.md # Project documentation
 
----
 
-## 🛠️ Installation  
+---
+##  Installation  
 
 1. **Install dependencies**  
    ```bash
    pip install -r requirements.txt
-
    streamlit run app.py
-📊 Model Details
 
-Architecture: LSTM-based language model.
+##  Model Details  
 
-Training Data: Tokenized sequences from hamlet.txt.
+- **Architecture**: LSTM-based language model  
+- **Training Data**: Tokenized sequences from `hamlet.txt`  
+- **Sequence Length**: Derived from model input shape at runtime  
+- **Output**: Predicts the most likely next word using softmax probabilities  
 
-Sequence Length: Derived from model input shape at runtime.
+---
 
-Output: Predicts the most likely next word using softmax probabilities.
+## Experiments  
 
-📓 Experiments
+The `experiments.ipynb` notebook contains:  
+- Data preprocessing (tokenization, sequence padding)  
+- Model training with early stopping  
+- Accuracy and loss visualization  
+- Hyperparameter tuning  
 
-The experiments.ipynb notebook contains:
+---
 
-Data preprocessing (tokenization, sequence padding).
+## Future Improvements  
 
-Model training with early stopping.
+- Extend dataset with larger corpora for better generalization  
+- Implement **beam search** for multi-word predictions  
+- Add **API endpoints** for external integration  
+- Support for **top-k** or **temperature-based sampling**  
 
-Accuracy and loss visualization.
-
-Hyperparameter tuning.
-
-💡 Future Improvements
-
-Extend dataset with larger corpora for better generalization.
-
-Implement beam search for multi-word predictions.
-
-Add API endpoints for external integration.
-
-Support for top-k or temperature-based sampling.
